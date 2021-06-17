@@ -1,4 +1,4 @@
-exports.hello = (req, res) => {
+exports.contest = (req, res) => {
 	res.send("welcome\n");
 
 	// runPy

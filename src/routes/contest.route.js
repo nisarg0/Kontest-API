@@ -1,8 +1,8 @@
 const express = require("express");
 router = express.Router();
 
-hello = require("../controllers/hello");
+contest = require("../controllers/contest.controller");
 
-router.get("/", hello.hello);
+router.get("/", contest.contest);
 
 module.exports = router;

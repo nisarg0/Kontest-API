@@ -4,5 +4,7 @@ dotenv.config();
 
 module.exports = {
 	port: process.env.PORT || 3000,
-	//   databaseURL: process.env.DATABASE_URI,
+	db_username: process.env.DB_USERNAME,
+	db_pass: process.env.DB_PASS,
+	db_name: process.env.DB_NAME,
 };
