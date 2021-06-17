@@ -6,6 +6,8 @@ const cors = require("cors");
 const helmet = require("helmet");
 const morgan = require("morgan");
 
+var config = require("./config/index");
+
 app = express();
 
 // adding Helmet to enhance your API's security
@@ -19,8 +21,6 @@ app.use(morgan("combined"));
 
 app.use("/", require("./routes/hello"));
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-	console.log(`Listening at port ${PORT}`);
+app.listen(config.port, () => {
+	console.log(`Listening at port ${config.port}`);
 });
